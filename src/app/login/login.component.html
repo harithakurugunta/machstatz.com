@@ -1,0 +1,28 @@
+<div class="container">
+
+  <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+   <div class="panel panel-primary">
+       <div class="panel-heading">login form</div>
+       <div class="panel-body">
+         <div class="form-group">
+            <label>username</label>
+            <input type="text" placeholder="enter your name" class="form-control" [(ngModel)]="name">
+         </div>
+         <div class="form-group">
+           <label>password</label>
+           <input type="text" class="form-control" placeholder="enter your password" [(ngModel)]="pass" >
+         </div>
+         <div class="form-group text-center">
+            <button class="btn btn-primary" (click)="check(name,pass)">Login</button>
+         </div>        
+       </div>
+       <div class="panel-footer">
+          <a href="javascript:void(0)" routerLink="/reg">I am new customer</a>
+       </div>
+   </div>
+  </div>
+      <div class="col-md-4"></div>
+  </div>
+  </div>
